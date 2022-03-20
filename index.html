@@ -4,34 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="html/css examples">
+    <meta name="keywords" content="html, css, html/css examples, learning html/css basics">
+    <title>HTML/CSS Examples</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form>
-        <label for="text">Ваше имя</label>
-        <input type="text" id="text" placeholder="Введите ваше имя">
-        <br><br>
-        <label for="email">Ваша почта</label>
-        <input type="email" id="email" placeholder="Введите вашу почту">
-        <br><br>
-        <label for="message">Оставьте ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="30" rows="10"></textarea>
-        <br><br>
-        <input type="radio" id="one" name="number">
-            <label for="one">one</label>
-        <input type="radio" id="two" name="number">
-            <label for="two">two</label>
-        <input type="radio" id="three" name="number">
-            <label for="three">three</label>
-            <br><br>
-        <input type="checkbox" name="color" id="red">
-            <label for="red">red</label><br>
-        <input type="checkbox" name="color" id="blue">
-            <label for="blue">blue</label><br>
-        <input type="checkbox" name="color" id="green">
-            <label for="green">green</label><br>
-    </form>
-    <img src="img/html.png" alt="html5">
+    
+    <div class="container">
+        <div class="card text">
+            <img src="img/facebook.png" alt="facebook">
+            <h1>Alexander Pulov</h1>
+            <p>Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Impedit inventore animi, <em>doloribus hic accusantium repellat</em> eligendi unde rerum officia perspiciatis?</p>
+            <h3>Social Media:</h3>
+            <div>
+                <a href="#" target="_blank">Instagram</a> | 
+                <a href="#" target="_blank">Telegram</a> | 
+                <a href="#" target="_blank">Youtube</a>
+            </div>
+        </div>
+
+
+
+        <div class="card list">
+            <h3>My favorite sport</h3>
+            <div class="flex-list">
+                <ul>
+                    <li>Football</li>
+                    <li>Formula 1</li>
+                    <li>Basketball</li>
+                </ul>
+                <ol>
+                    <li>Football</li>
+                    <li>Formula 1</li>
+                    <li>Basketball</li>
+                </ol>
+            </div>
+        </div>
+
+
+
+        <div class="card table">
+            <h3>Work Experince</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Whatever</td>
+                        <td>Junior Front-End Developer</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Whatever</td>
+                        <td>Middle Front-End Developer</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Whatever</td>
+                        <td>Senior Front-End Developer</td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div class="card contact">
+            <h3>Contact Me</h3>
+            <form class="form">
+
+                <div class="flex">
+                    <div class="form-name">
+                        <label for="text">your name</label>
+                        <input type="text" id="text" placeholder="type your name">
+                    </div>
+                    <div class="form-email">
+                        <label for="email">your email</label>
+                        <input type="email" id="email" placeholder="type your email">
+                    </div>
+                </div>
+
+                <div class="form-area">
+                    <label for="message">your message</label>
+                    <textarea id="message" cols="30" rows="10" placeholder="type your message"></textarea>
+                </div>
+
+                <button class="btn" type="submit">Submit</button>
+
+            </form>
+        </div>
+    </div>  
+    
 </body>
 </html>
