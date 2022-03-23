@@ -1,208 +1,270 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-    font-family: 'Roboto', serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
-    background: #f4f3f5;
+    margin: 0;
+
+    background: aliceblue;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
 .container {
-    max-width: 70%;
+    max-width: 700px;
     margin: 0 auto;
+    background-color: #cbffe1;
 }
 
-a {
-    color: #000;
+
+
+
+
+/* Header */
+
+.header {
+    padding: 10px 0;
+
+    background-color: aquamarine;
+}
+
+.header-title {
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+.header-text {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+/* Nav */
+
+.nav {
+    text-align: center;
+    background-color: beige;
+    font-size: 0;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 5px 15px;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 12px;
 }
 
-a:hover {
-    text-decoration: underline;
+.nav-active {
+    background-color: rgb(219, 200, 175);
 }
 
-a:active {
-    color: #4e5564;
-}
-
-h1, h2, h3, h4 {
-    padding: 5px 0px;
-}
-
-ul, ol {
-    padding: 5px 20px;
+.nav-link:hover {
+    background-color: rgb(219, 200, 175);
 }
 
 
-.card {
-    border: 1px #000 solid;
-    margin: 5px 0 15px 0;
-    border-radius: 5px;
-    padding: 10px;
+
+
+
+/* Content */
+
+.content {
+    margin-bottom: 25px;
+    padding: 0 10px;
 }
 
-.text {
-    background-color: #ffe96e;
+.content-title {
+    font-size: 22px;
+    color: #03898d;
+    margin: 10px 0;
 }
 
-.text p {
-    font-family: 14px;
-    color: #b4731e;
-    padding-bottom: 15px;
+.content-text {
+    margin: 5px 0 10px;
 }
 
-.text img {
-    width: 200px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.5);
+.content-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 15px;
+    background-color: #806363;
+    border-radius: 4px;
 }
 
-.list {
-    background-color: #e76b72;
+.content-link:hover {
+    background-color: #585151;
 }
 
-.table {
-    background-color: #6aa1788f;
+
+
+
+/* News */
+
+.news {
+    margin-bottom: 25px;
+    padding: 0 10px;
 }
 
-.flex-list {
-    display: flex;
-}
-
-.table table {
-    background-color: #f4f3f5;
-    padding: 5px;
-    width: 50%;
-    height: 100px;
-}
-
-.table table thead {
-    background-color: #e76b72;
-}
-
-.table table tbody {
-    background-color: beige;
-}
-
-.table table tbody tr:nth-child(2) {
+.news span {
     font-weight: 700;
+}
+
+.news-text {
+    margin: 10px 0;
+
+    background-color: rgb(255, 208, 191);
+}
+
+.news-text--orange {
+    color: orange;
+}
+
+
+
+
+
+
+
+/* Form */
+
+.form {
+    margin: 20px auto;
+    padding: 20px;
+    width: 380px;
+
+    background-color: rgb(225, 225, 238, 0.4);
+    color: #806363;
+    border: 1px solid #000000;
+}
+
+.form-title {
     font-size: 18px;
 }
 
-
-
-
-
-
-
-/* Contact Me */
-
-.contact {
-    background-color: #fff;
-    margin-bottom: 5px;
-    color: #000;
-}
-
-.contact h3 {
-    text-align: center;
-    font-size: 25px;
-    padding: 20px 0;
-}
-
-.form {
-    margin-top: 20px;
-}
-
-.flex {
-    display: flex;
+.form-sex {
     margin-bottom: 20px;
 }
 
 .form-name {
-    width: 100%;
-    margin: 0 10px;
+    width: 60%;
+    box-sizing: border-box;
+    display: block;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    outline: none;
 }
 
 .form-email {
-    width: 100%;
-    margin: 0 10px;
-}
-
-.form-name label {
+    width: 60%;
+    box-sizing: border-box;
     display: block;
-    padding-bottom: 5px;
-}
-
-.form-name input {
-    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-family: inherit;
     outline: none;
-    border: none;
-    border-bottom: 1px solid #000;
 }
 
-.form-email label {
+.form-message {
+    width: 60%;
+    height:150px;
+    box-sizing: border-box;
     display: block;
-    padding-bottom: 5px;
-}
-
-.form-email input {
-    width: 100%;
+    margin-bottom: 20px;
+    font-family: inherit;
+    padding: 5px;
     outline: none;
-    border: none;
-    border-bottom: 1px solid #000;
 }
 
-.form-area label {
-    display: block;
-    padding-bottom: 5px;
-
-}
-
-.form-area textarea {
-    width: 100%;
+.form-quastion {
+    width: 60%;
+    padding: 5px;
+    box-sizing: border-box;
     outline: none;
-    border: none;
-    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
 }
 
-.form-area {
-    margin: 0 10px;
+.form-group--info {
+    margin-bottom: 20px;
 }
 
-::placeholder {
-    font-family: Roboto, sans-serif;
+.form-send {
+    margin: 0;
 }
 
 .btn {
-    margin: 10px;
-    background-color: #e76b72;
-    width: 90px;
-    height: 30px;
+    background-color: rgb(69, 220, 10, .7);
     border: none;
-    color: #fff;
-    cursor: pointer;
+    padding: 10px 20px;
     font-weight: 700;
 }
 
+.btn--grey {
+   background-color: rgb(178, 178, 178, .7);
+}
+
 .btn:hover {
-    background-color: #b1383e;
+    background-color: rgb(69, 220, 10);
+}
+
+.btn--grey:hover {
+    background-color: rgb(178, 178, 178);
 }
 
 
 
 
-/* Media */
 
-@media (max-width: 650px) {
-    .flex-list {
-        flex-direction: column;
-    }
+
+/* Table */
+
+.table {
+    margin: 40px auto;
+    border: 1px solid red;
+    border-collapse: collapse;;
+    background: url('../img/bg.jpeg') no-repeat right top;
+}
+
+.table th {
+    padding: 3px 7px;
+    border: 1px solid red;
+}
+
+.table td {
+    padding: 3px 7px;
+    border: 1px solid red;
+}
+
+
+/* List */
+
+.list {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list ul li {
+
+    list-style-type: square;
+}
+
+.list ol li {
+    list-style-type: upper-latin;
+}
+
+/* Footer */
+
+.footer {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
 }
